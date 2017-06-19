@@ -201,7 +201,7 @@ y_test = np.array([np.argmax(row) for row in data.test.labels])
 y_test_cls = np.array([np.argmax(row) for row in data.test.labels])
 
 # key is a tensor? Yes. Value maybe a Python Scalar, String, List, or numpy array that can be converted to the same dtype as that of tensor
-# In addition to the above chceking, if key is a placeholder, the shape of the value will be checked for compatibility with the placeholder
+# In addition to the above checking, if key is a placeholder, the shape of the value will be checked for compatibility with the placeholder
 # x is a placeholder of tf.float32 with (None, 784) : data.test.images is a numpy array of shape (10000, 784)
 # y_true is a placeholder of tf.float32 with (None, 10) : data.test.labels is a numpy array of shape (10000, 10)
 # y_true_cls is a placeholder of tf.int64 with (None):  y_test is also a numpy array of shape (10000,)
